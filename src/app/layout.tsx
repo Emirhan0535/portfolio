@@ -1,24 +1,27 @@
-import type { Metadata } from 'next'
-import { ThemeProvider } from 'next-themes'
-import './globals.css'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import ThemeProviderWrapper from '../components/ThemeProviderWrapper';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Emirhan Akdeniz',
-  description: 'Personal Portfolio',
-}
+  description: 'Personal portfolio website of Emirhan Akdeniz',
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning>
-      <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProviderWrapper>
           {children}
-        </ThemeProvider>
+        </ThemeProviderWrapper>
       </body>
     </html>
-  )
+  );
 } 

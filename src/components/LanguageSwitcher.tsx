@@ -1,19 +1,24 @@
 'use client';
 
-import { useLocale } from 'next-intl';
-import { Link } from '../../i18n';
+import { useRouter } from 'next/navigation';
+import { useTranslation } from '../hooks/useTranslation';
 
 export default function LanguageSwitcher() {
-  const locale = useLocale();
-  const switchLocale = locale === 'en' ? 'es' : 'en';
+  const router = useRouter();
+  const { locale, setLocale } = useTranslation();
+
+  const toggleLocale = () => {
+    const newLocale = locale === 'en' ? 'es' : 'en';
+    setLocale(newLocale);
+    router.refresh();
+  };
 
   return (
-    <Link
-      href="/"
-      locale={switchLocale}
-      className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+    <button
+      onClick={toggleLocale}
+      className="flex items-center justify-center w-8 h-8 rounded-lg transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
     >
-      {locale === 'en' ? '🇪🇸' : '🇬🇧'}
-    </Link>
+      {locale === 'en' ? '🇺🇸' : '🇪🇸'}
+    </button>
   );
 } 
