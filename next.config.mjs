@@ -1,12 +1,10 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin('./i18n.ts');
+const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  env: {
-    _next_intl_trailing_slash: '1'
-  }
+const config = {
+  trailingSlash: true
 };
 
-export default withNextIntl(nextConfig); 
+export default withNextIntl(config); 

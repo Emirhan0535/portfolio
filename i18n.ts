@@ -11,4 +11,9 @@ export default getRequestConfig(async ({locale}) => {
     messages: (await import(`./messages/${requestLocale}.json`)).default,
     timeZone: 'Europe/Istanbul'
   };
-}); 
+});
+
+export const locales = ['en', 'es'] as const;
+export const defaultLocale = 'en' as const;
+
+export type Locale = (typeof locales)[number]; 
