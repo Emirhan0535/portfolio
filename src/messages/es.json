@@ -1,0 +1,25 @@
+{
+  "home": {
+    "who_am_i": "¿quién soy?",
+    "about_me": "sobre mí",
+    "about_text": "Soy un desarrollador de software apasionado con un gran interés en crear soluciones elegantes. Mi viaje en la tecnología comenzó temprano, y desde entonces he estado explorando varios aspectos del desarrollo de software. Creo en escribir código limpio y mantenible y crear experiencias amigables para el usuario.",
+    "technologies": "tecnologías que uso",
+    "projects": "mis proyectos",
+    "contact": "contáctame",
+    "software_development": "desarrollo de software",
+    "web_design": "diseño web",
+    "mobile_development": "desarrollo móvil",
+    "cloud_solutions": "soluciones en la nube",
+    "ui_ux_design": "diseño UI/UX",
+    "database_management": "gestión de bases de datos",
+    "project_1": "Proyecto 1",
+    "project_2": "Proyecto 2",
+    "project_3": "Proyecto 3",
+    "project_desc_1": "Descripción del proyecto 1",
+    "project_desc_2": "Descripción del proyecto 2",
+    "project_desc_3": "Descripción del proyecto 3",
+    "email": "Correo",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+} 

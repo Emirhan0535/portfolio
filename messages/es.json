@@ -1,0 +1,18 @@
+{
+  "home": {
+    "welcome": "Bienvenidos",
+    "description": "Bienvenido a nuestra moderna y potente aplicación web Next.js",
+    "features": {
+      "title": "Características",
+      "modern": "✨ Diseño Moderno",
+      "performance": "🚀 Alto Rendimiento",
+      "darkMode": "🌙 Modo Oscuro",
+      "responsive": "📱 Diseño Responsivo"
+    },
+    "getStarted": {
+      "title": "Empezar",
+      "description": "¿Estás listo para explorar nuestro proyecto?",
+      "button": "Explorar"
+    }
+  }
+} 

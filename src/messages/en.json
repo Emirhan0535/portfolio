@@ -1,0 +1,25 @@
+{
+  "home": {
+    "who_am_i": "who am i?",
+    "about_me": "about me",
+    "about_text": "I am a passionate software developer with a keen interest in creating elegant solutions. My journey in technology started early, and I've been exploring various aspects of software development ever since. I believe in writing clean, maintainable code and creating user-friendly experiences.",
+    "technologies": "technologies i use",
+    "projects": "my projects",
+    "contact": "contact me",
+    "software_development": "software development",
+    "web_design": "web design",
+    "mobile_development": "mobile development",
+    "cloud_solutions": "cloud solutions",
+    "ui_ux_design": "ui/ux design",
+    "database_management": "database management",
+    "project_1": "Project 1",
+    "project_2": "Project 2",
+    "project_3": "Project 3",
+    "project_desc_1": "Description of project 1",
+    "project_desc_2": "Description of project 2",
+    "project_desc_3": "Description of project 3",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+} 

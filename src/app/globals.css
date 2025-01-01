@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --heading: #000000;
+  --text: #000000;
+  --bg-opacity: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --heading: #ffffff;
+  --text: #ffffff;
+  --bg-opacity: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tema değişim stilleri */
+.min-h-screen {
+  background: var(--background) !important;
+}
+
+/* Başlık stilleri */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading) !important;
+  font-weight: 500 !important;
+}
+
+/* Metin stilleri */
+p, span, a {
+  color: var(--text) !important;
+}
+
+.text-white,
+.text-white\/90,
+.text-white\/70,
+.text-white\/60,
+.text-white\/40,
+.text-white\/20 {
+  color: var(--text) !important;
+}
+
+.border-white\/40 {
+  border-color: var(--text) !important;
+  opacity: 0.4;
+}
+
+.border-white\/20 {
+  border-color: var(--text) !important;
+  opacity: 0.2;
+}
+
+.bg-white\/10 {
+  background-color: var(--bg-opacity) !important;
+}
+
+.bg-white\/20 {
+  background-color: var(--bg-opacity) !important;
+  opacity: 0.2;
+}
+
+.bg-black {
+  background-color: var(--background) !important;
+}
+
+/* Proje kartları için özel stiller */
+.bg-white\/10.rounded-lg {
+  background-color: var(--bg-opacity) !important;
+  backdrop-filter: blur(8px);
+}
+
+.bg-white\/10.rounded-lg h3 {
+  color: var(--heading) !important;
+  font-weight: 500 !important;
+}
+
+.bg-white\/10.rounded-lg p {
+  color: var(--text) !important;
+}
+
+/* Scroll bar'ı gizle */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox için */
+* {
+  scrollbar-width: none;
+}
+
+/* IE ve Edge için */
+* {
+  -ms-overflow-style: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}

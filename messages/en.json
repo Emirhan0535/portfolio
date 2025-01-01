@@ -1,0 +1,18 @@
+{
+  "home": {
+    "welcome": "Welcome",
+    "description": "Welcome to our modern and powerful Next.js web application",
+    "features": {
+      "title": "Features",
+      "modern": "✨ Modern Design",
+      "performance": "🚀 High Performance",
+      "darkMode": "🌙 Dark Mode Support",
+      "responsive": "📱 Mobile Responsive"
+    },
+    "getStarted": {
+      "title": "Get Started",
+      "description": "Are you ready to explore our project?",
+      "button": "Explore"
+    }
+  }
+} 
