@@ -233,8 +233,6 @@ export default function Home() {
     }
   };
 
-  const sections = [contactSectionRef, projectsSectionRef, techSectionRef, aboutSectionRef];
-
   return (
     <div className="relative">
       <ThemeToggle />

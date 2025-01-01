@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 interface TypeWriterProps {
@@ -18,7 +18,6 @@ export function TypeWriter({
   speed = 30 
 }: TypeWriterProps) {
   const [displayedText, setDisplayedText] = useState('')
-  const controls = useAnimation()
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5
